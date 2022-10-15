@@ -1,0 +1,120 @@
+body {
+  font-family: "Fira Sans", Arial, sans-serif;
+  margin: 0px;
+  color: #141414;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.subtitulo {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+  }
+}
+
+
+.modal{
+  width: 100%;
+    position: fixed;
+    display: none;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    align-items: center;
+}
+.modal.ativo{
+  display: flex;
+}
+.corpo-modal{
+  position: absolute;
+  width: 85%;
+  max-width: 350px;
+  padding: 15px;
+  height: auto;
+  border-radius: 8px;
+  background: #e0dede;
+}
+.titulo-modal{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.titulo-modal::before{
+  content: "";
+  display: block;
+  width: 25px;
+  height: 6px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: relative;
+  left: 0px;
+}
+.desc-modal{
+  display: flex;
+  margin-bottom: 15px;
+  flex-direction: column;
+}
+.empresa-titulo-modal{
+  font-weight: bold;
+  text-align: center;
+}
+.cargo-modal{
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.empresa-habilidades-modal{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+ justify-content: center;
+}
+.empresa-habilidades-modal li{
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  background: #141414;
+  color: #f5f5f5;
+  padding: 5px 10px;
+}
+.fechar{
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
